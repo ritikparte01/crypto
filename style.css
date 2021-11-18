@@ -1,0 +1,812 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Varela Round', sans-serif;
+}
+
+.container{
+    color: white;
+    width: 100%;
+    height: 100vh;
+    background: url(./imgs/Desktop\ -\ 1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.header{
+    padding-left: 250px;
+    padding-right: 250px;    
+    display: flex;
+    justify-content: space-between;
+    align-items: calc();
+    padding-top: 30px;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo img{
+    width: 20%; 
+    padding-right: 10px;
+}
+
+.navbar{
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu{
+    width: 300px;
+}
+
+.menu ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.menu ul a{
+    text-decoration: none;
+    color: white;
+    transition: .6s;
+}
+
+.menu ul a:hover{
+    color: violet;
+}
+
+.reg{
+    width: 150px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.reg a{
+    text-decoration: none;
+    color: white;
+}
+
+.main-1{
+    position: absolute;
+    top: 18%;
+    left: 300px;
+}
+
+.main-txt1{
+    width: 430px;
+}
+
+.main-1 h1{
+    font-size: 50px;
+}
+
+.main-1 .para1{
+    font-size: 19px;
+    color: grey;
+    line-height: 28px;
+    margin-top: 20px;
+
+}
+
+.trail{
+    width: 150px;
+    height: 35px;
+    margin-top: 25px;
+    border: none;
+    border-radius: 14px;
+    background: rgb(255, 18, 255);
+    color: white;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.aside{
+    margin-top: 70px;
+    width: 250px;
+    display: flex;
+    justify-content: space-between;
+    color: grey;
+}
+
+.left,.right{
+    line-height: 45px;
+    text-transform: uppercase;
+}
+
+
+.eth{
+    width: 20%;
+    position: absolute;
+    right: 200px;
+    top: 300px;
+    transition: .4s;
+}
+.eth2{
+    width: 14%;
+    position: absolute;
+    right: 180px;
+    top: 100px;
+    z-index: 1000;
+    transition: .4s;
+}
+
+
+.mobile{
+    width: 40%;
+    position: absolute;
+    right: 200px;
+    /* z-index: 10; */
+    top: 100px;
+    transition: .4s;
+}
+
+.toggle-button{
+    position: absolute;
+    top: 25px;
+    right: 70px;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+    z-index: 1000;
+}
+.bar{
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+
+/* ==========MEDIA QUERY FOR MOBILE  CONTAINER 1==================== */
+
+
+@media only screen and (max-width: 600px) {
+    body{
+        background: black;
+    }
+
+    .container{
+        max-width:415px;
+        overflow-x:hidden;
+        height: 100vh;
+        background: black;
+        background-position: center;
+        background-size: cover;
+    }
+    
+
+    .toggle-button{
+        display: flex;
+        position: absolute;
+        right: 30px;
+        top: 22px;
+    }
+    .menu{
+        display: none;
+        
+    }
+
+    .menu ul{
+        flex-direction: column;
+        align-items: flex-end;
+        text-align: center;
+        width: 100%;
+        background: rgb(255, 30, 255);
+        position: absolute;
+        right: 30px;
+        top: 60px;
+        padding-right: 35px;
+    }
+
+    .menu a{
+        margin-top: 50px;
+        line-height: 40px;
+        width: 100%;
+    }
+
+.header{
+    padding: 20px;
+    font-size: 14px;
+}
+
+.main-1{
+    position: absolute;
+    left: 20px;
+    margin-top: 400px;
+    /* display: none; */
+    width: 400px;
+}
+
+.main-txt1{
+    width: 380px;
+    margin: 0;
+    padding: 0;
+    margin-top: -60px;
+}
+
+.mobile{
+    width: 70%;
+    position: absolute;
+    top: 90px;
+    left: 70px;
+   
+}
+
+.eth{
+    position: absolute;
+    left:40px;
+    width: 30%;
+}
+
+.eth2{
+    position: absolute;
+    right: 10px;
+    width: 25%;
+}
+
+.reg{
+    width: 80px;
+    display: flex;
+    height: 120px;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    left: -50px;
+    top: 100px;
+    z-index: 10000;
+}
+
+.reg a{
+    text-decoration: none;
+    color: white;
+    display: table-cell;
+    writing-mode: vertical-rl;
+    z-index: 10000;
+    
+}
+
+
+
+ }
+
+/* =============CONTINER 2 =========================== */
+
+
+ .container2{
+     width: 100%;
+     height: 100vh;
+     background: url(imgs/Desktop\ -\ 1\ \(6\).jpg);
+     background-position: center;
+     background-size: cover;
+     color: white;
+     overflow: hidden;
+ }
+
+ .main-txt2{
+     position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        margin-top: 100px;
+ }
+
+ .main-txt2 h1{
+    font-size: 45px;
+    letter-spacing: 1px;
+ }
+
+ .main-txt2 p{
+     font-size: 19px;
+     margin-top: 20px;
+     width: 300px;
+     margin-left: 25px;
+     text-align: center;
+     color: grey;
+     letter-spacing: 1px;
+ }
+
+
+ .cards{
+     /* background: red; */
+     height: 400px;
+     width: 1200px;
+     position: relative;
+     top: 60%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     display: flex;
+     justify-content: space-evenly;
+     align-items: center;
+ }
+
+ .card{
+     /* background: chartreuse; */
+     width: 300px;
+     height: 100%;
+     display: flex;
+     flex-direction: column;
+     /* justify-content: space-evenly; */
+     align-items: center;
+     border-radius: 25px;
+     border: 2px solid rgb(255, 45, 255);
+     background: rgba(0, 0, 0, 0.514);
+     cursor: pointer;
+     transition: 1s;
+ }
+
+.card:hover{
+    transform:scale(110%);
+
+}
+
+ .btc{
+     margin-top: 50px;
+     height: 55px;
+     width: 55px;
+     background:rgb(39, 39, 39);
+     text-align: center;
+     font-size: 45px;
+     border-radius: 20px;
+     color: rgb(255, 45, 255);
+ }
+
+ .card h3{
+     font-size: 40px;
+     margin-top: 20px;
+ }
+
+ .card span{
+     color: rgb(255, 45, 255);
+     font-weight: 900;
+     font-family:Arial, Helvetica, sans-serif;
+     letter-spacing: 1px;
+ }
+
+ .grp{
+     font-size: 65px;
+     margin-top: 30px;
+     color: rgb(255, 45, 255);
+ }
+
+ .buy{
+     margin-top: 15px;
+     height: 40px;
+     width: 150px;
+     border-radius: 20px;
+     border: 2px solid rgb(255, 45, 255);;
+     background: transparent;
+     color: rgb(255, 45, 255);
+     font-weight: bolder;
+     cursor: pointer;
+     transition: 1s;
+ }
+
+ .buy:hover{
+     background:rgb(255, 45, 255);
+     color: white;
+ }
+
+
+
+
+
+ /* ==========MEDIA QUERY FOR MOBILE  CONTAINER 2==================== */
+
+
+@media only screen and (max-width: 600px) {
+.container2{
+    margin-top: 300px;
+    height: 100vh;
+    overflow: auto;
+}
+
+.main-txt2{
+    text-align: center;
+}
+
+.cards{
+    margin-top: 600px;
+    display: flex;
+    flex-direction:column;
+    justify-content: space-evenly;
+    width: 1200px;
+    position: absolute;
+    top: 1500px;
+}
+
+.card{
+    margin-top: 80px;
+    padding-bottom: 20px;
+
+}
+
+}
+
+
+/* =============CONTINER 3 =========================== */
+
+
+.container3{
+    width: 100%;
+    height: 100vh;
+    /* background: black; */
+    background: url(imgs/Desktop\ -\ 3.jpg);
+    background-position: center;
+    background-size: cover;
+    color: white;
+    overflow: hidden;
+}
+
+.imgbx3{
+    width: 600px;
+    position: absolute;
+    left: 100px;
+    margin-top: 250px;
+}
+
+.imgbx3 img{
+    width: 600px;
+    transition: .4;
+}
+
+.mon{
+    position: absolute;
+    left: 450px;
+    margin-top: 30px;
+    width: 40% !important;
+}
+
+.main-txt3{
+    position: absolute;
+    right: 300px;
+    margin-top: 200px;
+}
+
+.main-txt3 h1{
+    font-size: 50px;
+    width: 400px;
+}
+
+.main-txt3 p{
+    margin-top: 30px;
+    color: grey;
+    line-height: 28px;
+}
+
+.get{
+    width: 150px;
+    height: 40px;
+    margin-top: 30px;
+    border-radius: 20px;
+     border: 2px solid rgb(255, 45, 255);
+     background: rgb(255, 45, 255);
+     color: white;
+     font-weight: 700;
+     letter-spacing: 1px;
+     cursor: pointer;
+}
+
+
+
+/* ==========MEDIA QUERY FOR MOBILE  CONTAINER 3==================== */
+
+
+@media only screen and (max-width: 600px) {
+    .container3{
+        margin-top: 1100px;
+        /* height: 100vh; */
+        overflow: hidden;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: column;
+        height: 700px;
+        width: 100%;
+    }
+    .imgbx3 img{
+        width: 50%;
+        position: relative;
+        left: -50px;
+        top: -200px;
+       
+    }
+
+    .mon{
+       display: none;
+    }
+
+    .main-txt3{
+        width: 280px;
+        font-size: 22px;
+        position: relative;
+        top: 50px;
+        left: -40px;
+    
+    }
+
+
+
+}
+
+
+
+.container4{
+    width: 100%;
+    height: 100vh;
+    /* background: black; */
+    background: url(imgs/Desktop\ -\ 3\ -\ Copy.jpg);
+    background-position: center;
+    background-size: cover;
+    color: white;
+    overflow: hidden;
+}
+
+.main-txt4{
+    position: absolute;
+    left: 250px;
+    margin-top: 300px;
+}
+
+.main-txt4 p{
+    font-size: 20px;
+    letter-spacing: 1px;
+    margin-top: 20px;
+    line-height: 35px;
+    color: grey;
+}
+
+.main-txt4 h1{
+    font-size: 55px;
+    letter-spacing: 1px;
+}
+
+.thu{
+    width: 10%;
+    position: absolute;
+    right: 150px;
+    margin-top: 100px;
+}
+
+.wall{
+    width: 30%;
+    position: absolute;
+    right: 150px;
+    margin-top: 150px;
+}
+
+
+/* ==========MEDIA QUERY FOR MOBILE  CONTAINER 4==================== */
+
+
+@media only screen and (max-width: 600px) {
+    .container4{
+        /* margin-top: 1100px; */
+        height: 100vh;
+        overflow: auto;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: column-reverse;
+        height: 800px;
+        width: 100%;
+
+    }
+
+    .wall{
+        position: relative;
+        top: -300px;
+        left: 70px;
+        width: 60%;
+    }
+
+    .thu{
+        width: 30%;
+        position: relative;
+        right: -20px;
+        top: -450px;
+    }
+
+    .main-txt4{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        left: 10px;
+       margin-top: 300px;
+    }
+    
+
+}
+
+
+
+.footer{
+    width: 100%;
+    height: 300px;
+    background: black;
+    padding-left: 250px;
+    padding-right: 250px;
+    display: flex;
+    color: white;
+}
+
+.f1{
+    width: 300px;
+    height: 100%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.f1 p{
+    margin-top: 30px;
+    text-align: left;
+    width: 250px;
+    line-height: 35px;
+    color: grey;
+
+}
+
+.f2{
+    width: 800px;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.s1{
+    width: 200px;
+    height: 100%;
+}
+
+.s1 ul{
+    margin-top: 30px;
+}
+
+.s1 ul li{
+    list-style: none;
+    line-height: 50px;
+    color: grey;
+}
+
+.s2{
+    width: 200px;
+    height: 100%;
+}
+
+.s2 ul{
+    margin-top: 30px;
+}
+
+.s2 ul li{
+    list-style: none;
+    line-height: 50px;
+    color: grey;
+}
+
+.s3{
+    width: 200px;
+    height: 100%;
+}
+
+.s3 ul{
+    margin-top: 30px;
+}
+
+.s3 ul li{
+    list-style: none;
+    line-height: 50px;
+    color: grey;
+}
+
+.f3{
+    width: 300px;
+    height: 100%;
+}
+
+.store{
+    margin-top: 20px;
+    width: 50%;
+}
+
+
+
+
+
+/* ==========MEDIA QUERY FOR MOBILE  CONTAINER 4==================== */
+
+
+@media only screen and (max-width: 600px) {
+    .footer{
+        padding: 0;
+        padding-left: 0px;
+        flex-direction: column;
+    }
+
+    .f1{
+        padding-left: -10px;
+    }
+
+    .f2{
+        margin-top: 200px;
+        flex-direction: column;
+        padding-left: 15px;
+    }
+    .s1 ul{
+        margin-top: 15px;
+    }
+
+    .s1 ul li{
+        line-height: 30px;
+    }
+
+    .s2{
+        margin-top: 30px;
+    }
+
+    .s2 ul{
+        margin-top: 15px;
+    }
+
+    .s2 ul li{
+        line-height: 30px;
+    }
+    .s3{
+        margin-top: 30px;
+    }
+
+    
+    .s3 ul{
+        margin-top: 15px;
+    }
+
+    .s3 ul li{        
+        line-height: 30px;
+    }
+
+    .f3{
+        margin-top: 120px;
+        padding-left: 10px;
+    }
+
+}
+
+
+
+
+
+.end{
+    width: 100%;
+    padding-left: 250px;
+    padding-right: 250px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background: black;
+    color:grey;
+    font-size: 13px;
+    padding-bottom: 50px;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .end{
+        margin: 0;
+        padding: 0;
+        padding-bottom: 30px;
+        margin-left: 5px;
+        margin-top: 680px;
+    }
+
+
+}
